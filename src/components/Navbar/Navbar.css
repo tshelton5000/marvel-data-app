@@ -1,0 +1,28 @@
+.Navbar{
+  background-color: #ed1d24;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav input{
+  height: 35px;
+  box-sizing: border-box;
+  margin: 7px 25px;
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  font-size: 20px;
+  font-family: 'Bangers', cursive;
+}
+
+nav input::placeholder{
+  color: white;
+}
+
+nav input:focus {
+  outline: none
+}
+

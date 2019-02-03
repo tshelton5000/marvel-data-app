@@ -1,0 +1,52 @@
+.EventButton{
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+}
+
+.EventName{
+  height: 50px;
+  padding: 5px 0;
+  width: 90%;
+  color: #ed1d24;
+  font-family: 'Bangers', cursive;
+  font-size: 16px;
+  background: transparent;
+  box-sizing: border-box;
+  border-color: #ed1d24;
+  border-width: 1px 0;
+  vertical-align: top;
+  transition: all 0.3s;
+}
+
+.EventName:hover{
+  background: #ed1d24;
+  color: white;
+}
+
+.DescButton{
+  height: 50px;
+  width: 10%;
+  padding: 5px 0;
+  color: #ed1d24;
+  font-family: 'Bangers', cursive;
+  font-size: 18px;
+  background: transparent;
+  box-sizing: border-box;
+  border-color: #ed1d24;
+  border-width: 1px 2px 1px 0;
+  vertical-align: top;
+  transition: all 0.3s;
+}
+
+.DescButton:hover{
+  background: #ed1d24;
+  color: white;
+}
+
+.eventDescription{
+  font-family: 'Roboto', sans-serif;
+  color: #ed1d24;
+  background-color: white;
+  padding: 5px;
+}

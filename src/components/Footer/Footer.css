@@ -1,0 +1,19 @@
+footer{
+  background-color: #ed1d24;
+  height: 35px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+img{
+  height: 100%;
+}
+
+.pageCount{
+  color: white;
+  margin: 0 0 10px 0;
+  font-family: 'Bangers', cursive;
+  vertical-align: 45%;
+  font-size: 20px;
+}

@@ -1,0 +1,40 @@
+.charContainer{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 200px calc(100% - 200px);
+}
+
+.avatarPic{
+  overflow: hidden;
+}
+
+.caption{
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bgImg{
+  height: 100%;
+  width: 100%;
+  filter: opacity(30%) grayscale(100%);
+  overflow: hidden;
+}
+
+.heroName{
+  font-family: 'Bangers', cursive;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.heroDesc{
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  color: white;
+}

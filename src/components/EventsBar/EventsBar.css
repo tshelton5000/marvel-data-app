@@ -1,0 +1,18 @@
+.TestComp {
+  height: calc(100vh - 85px);
+  width: 250px;
+  overflow: scroll;
+}
+
+.FilterTitle{
+  margin: 0;
+  padding: 10px 0;
+  height: 30px;
+  font-size: 20px;
+  font-family: 'Bangers', cursive;
+  color: #ed1d24;
+  text-align: center;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #ed1d24;
+}
