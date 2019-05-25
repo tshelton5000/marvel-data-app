@@ -28,7 +28,7 @@ class EventsBar extends React.Component {
 
   mapPropsToButtons = () => {
     return this.props.events.map(event => {
-      return <EventButton key={event.title} eventToggle={this.eventToggle} event={event}/>
+      return <EventButton key={event.title} eventToggle={this.eventToggle} event={event} eventFilters={this.props.eventFilters}/>
     })
   }
 
@@ -44,7 +44,8 @@ class EventsBar extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    events: state.events
+    events: state.events,
+    eventFilters: state.eventFilters
   }
 }
 

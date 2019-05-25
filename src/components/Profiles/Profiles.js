@@ -18,7 +18,7 @@ const Profiles = (props) => {
 }
 
 const mapStateToProps = (state) => {
-  let currentChars = state.characters.slice(state.currentPage*10, state.currentPage*10 + 10)
+  let currentChars = state.characters.slice((state.currentPage-1)*10, (state.currentPage-1)*10 + 10)
   return {characters: currentChars};
 }
 

@@ -7,5 +7,6 @@ export default {
   query: '',
   eventFilters: [],
   maxPages: Math.ceil(characterData.length/10),
-  currentPage: 0
+  currentPage: 1,
+  teamMembers: []
 }

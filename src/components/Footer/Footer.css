@@ -17,3 +17,7 @@ img{
   vertical-align: 45%;
   font-size: 20px;
 }
+
+.pageToggle{
+  cursor: pointer;
+}

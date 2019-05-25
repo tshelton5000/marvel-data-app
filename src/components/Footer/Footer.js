@@ -8,9 +8,9 @@ import rightArrow from '../../assets/iconfinder_icon-ios7-arrow-forward_211688.p
 const Footer = (props) => {
   return(
     <footer>
-      <img src={leftArrow} alt="leftArrow" onClick={() => props.dispatch({type: 'pageDown'})}/>
-      <span className="pageCount">Page {props.currentPage} of {props.maxPages}</span>
-      <img src={rightArrow} alt="rightArrow" onClick={() => props.dispatch({type: 'pageUp'})}/>
+      <img className="pageToggle" src={leftArrow} alt="leftArrow" onClick={() => props.dispatch({type: 'pageDown'})}/>
+      <span className="pageCount">Page {props.currentPage} of {props.maxPages > 1 ? props.maxPages : 1}</span>
+      <img className="pageToggle" src={rightArrow} alt="rightArrow" onClick={() => props.dispatch({type: 'pageUp'})}/>
     </footer>
   )
 }

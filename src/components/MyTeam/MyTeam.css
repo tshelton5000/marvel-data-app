@@ -1,10 +1,9 @@
-.TestComp {
+.MyTeam{
   height: calc(100vh - 85px);
-  width: 250px;
   overflow: scroll;
 }
 
-.FilterTitle{
+.MyTeamTitle{
   margin: 0;
   padding: 10px 0;
   height: 30px;
@@ -15,10 +14,4 @@
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #ed1d24;
-}
-
-@media (max-width: 599px){
-  .TestComp{
-    display: none;
-  }
 }

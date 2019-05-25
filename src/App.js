@@ -7,6 +7,7 @@ import Profiles from './components/Profiles/Profiles';
 import Navbar from './components/Navbar/Navbar';
 import EventsBar from './components/EventsBar/EventsBar';
 import Footer from './components/Footer/Footer';
+import MyTeam from './components/MyTeam/MyTeam';
 import './App.css';
 
 const store = createStore(reducer);
@@ -20,6 +21,7 @@ class App extends Component {
         <div className="MainDisplay">
           <EventsBar />
           <Profiles/>
+          <MyTeam />
         </div>
         <Footer/>
       </Provider>

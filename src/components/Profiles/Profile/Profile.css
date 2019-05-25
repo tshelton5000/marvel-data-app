@@ -29,6 +29,7 @@
   left: 5px;
   font-size: 20px;
   margin: 0 0 10px 0;
+  width: 97%;
 }
 
 .heroDesc{
@@ -37,4 +38,17 @@
   top: 20px;
   left: 5px;
   color: white;
+}
+
+.teamUp{
+  float: right;
+  height: 20px;
+  filter: grayscale(100%) brightness(1000%);
+  cursor: pointer;
+}
+
+@media (max-width: 599px){
+  .teamUp{
+    display: none;
+  }
 }

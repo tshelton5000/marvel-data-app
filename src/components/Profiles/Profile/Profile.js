@@ -1,7 +1,9 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 import './Profile.css';
 import MarvelBG from '../../../assets/MarvelBG.jpg';
+import TeamIcon from '../../../assets/team-icon.png';
 
 const Profile = (props) => {
   const descTrimmer = (string) => {
@@ -19,17 +21,27 @@ const Profile = (props) => {
            : {'backgroundColor': '#022D00'}
   }
 
+  const addToTeam = () => {
+    props.dispatch({type: 'addTeamMember', value: props.name})
+  }
+
   return(
     <div className="charContainer" style={stylePicker()}>
       <img className="avatarPic" src={`${props.thumbnail.path}/standard_xlarge.${props.thumbnail.extension}`}
            alt="Hero Avatar"/>
-      <div className="caption">
+      <div className="caption"> 
         <img src={MarvelBG} className="bgImg"/>
-        <p className="heroName">{props.name}</p>
+        <div className="heroName">{props.name}
+          <img onClick={addToTeam} src={TeamIcon} className="teamUp"/>
+        </div>
         <p className="heroDesc">{descTrimmer(props.description)}</p>
       </div>
     </div>
   )
 }
 
-export default Profile;
+const mapStateToProps = () => {
+  return {}
+}
+
+export default connect(mapStateToProps)(Profile);

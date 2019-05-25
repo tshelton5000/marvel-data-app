@@ -1,4 +1,10 @@
 .MainDisplay{
   display: grid;
-  grid-template-columns: 250px calc(100vw - 250px);
+  grid-template-columns: 250px calc(100vw - 400px) 150px;
+}
+
+@media (max-width: 599px){
+  .MainDisplay{
+    grid-template-columns: 1fr;
+  }
 }
